@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CluedoService } from 'src/app/services/cluedo.service';
 @Component({
   selector: 'app-kladblok',
   templateUrl: './kladblok.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KladblokComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cluedoService: CluedoService) { }
   clues = [
     {
         "id": "a1a80de2-ecb7-4b4e-a29c-53f8e5638e6d",
@@ -70,10 +70,30 @@ export class KladblokComponent implements OnInit {
         "type": "murderer"
     }
 ]
+locatie: Clue[] = [{ id: "", name: "", type: "" }]
+wapen: Clue[] = [{ id: "", name: "", type: "" }]
+moordenaar: Clue[] = [{ id: "", name: "", type: "" }]
   ngOnInit(): void {
+    this.sorteren();
   }
 
-  test ( ){
-    
+  sorteren(){
+    for (let index = 0; index < this.clues.length; index++) {
+     if (index <4) {
+       this.locatie[index] = this.clues[index];
+     }
+     if (index < 8) {
+      this.wapen[index-4] = this.clues[index];
+     }
+     if (index < 12) {
+      this.moordenaar[index-8] = this.clues[index];
+     }
+      
+    }
   }
+}
+export interface Clue {
+  id: string;
+  name: string;
+  type: string;
 }
