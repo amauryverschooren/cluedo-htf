@@ -12,4 +12,8 @@ export class StartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  clickedItem(event: Event){
+    console.log(event)
+  }
+
 }

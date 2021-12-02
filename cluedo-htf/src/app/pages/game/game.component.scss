@@ -1,0 +1,21 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .item {
+    flex: 1 1 auto;
+    width: 50%;
+    color: #ffffff;
+    background: #E7E7E7;
+    height: 100%;
+    bottom: 0;
+    height: 100vh;
+  }
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item{
+  
+}
