@@ -8,13 +8,17 @@ import { CluedoService } from 'src/app/services/cluedo.service';
 })
 export class GameComponent implements OnInit {
   round: number = 0;
+  gridOptions: string[] = [];
   constructor(private cluedoService: CluedoService) { }
-  
+  flag: boolean = false;
   ngOnInit(): void {
     this.createLobby();
   }
-  updateRound(){
-
+  getGridOptions(){
+    for (let i = 0; i < 9; i++) {
+      this.gridOptions.push(this.cluedoService.game.data.grids[0].clues[i].text);
+      
+    }
   }
   
   createLobby(){
@@ -27,6 +31,9 @@ export class GameComponent implements OnInit {
   createGame(){
     this.cluedoService.startGame().subscribe((resp) => {
       this.cluedoService.game = resp;
+      console.log(this.cluedoService.game);
+      this.flag = true;
+      this.getGridOptions();
     })
   }
 

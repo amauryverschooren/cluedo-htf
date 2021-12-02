@@ -1,7 +1,7 @@
 <div class="parent">
     <div class="item left">
-        <div class="grid" >
-            <div class="grid-item" *ngFor="let opties">1</div>
+        <div *ngIf="this.flag" class="grid" >
+            <div class="grid-item" *ngFor="let options of gridOptions">{{options}}</div>
         </div>
     </div>
     <div class="item right">
