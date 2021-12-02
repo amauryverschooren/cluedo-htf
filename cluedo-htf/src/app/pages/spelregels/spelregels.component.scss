@@ -1,0 +1,71 @@
+body {
+    background-image: url("/assets/img/grid.png");
+    
+    background-color: #E7E7E7;
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    background-color: rgba(255,255,255,0.8);
+    background-blend-mode: lighten;
+  }
+  h1 {
+    position: absolute;
+    width: 194px;
+    height: 38px;
+    left: 40px;
+    top: 39px;
+    background-image: url("/assets/img/title_mask.svg");
+    font-family: Gimp Scribble;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 38px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+  }
+  p {
+    position: absolute;
+    width: 1084px;
+    height: 544px;
+    left: calc(50% - 1084px/2);
+    top: calc(50% - 544px/2);
+    
+    font-family: Charter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 154.5%;
+    /* or 34px */
+    
+    text-align: center;
+    
+    color: #000000;
+  }
+  div {
+    //background: #1C1C1C;
+    border: 2px solid #1C1C1C;
+    width: 1440px;
+    height: 900px;
+
+  }
+  button{
+
+position: absolute;
+width: 36.1px;
+height: 34.13px;
+left: 1363.47px;
+top: 39px;
+background-image: url("/assets/img/close.svg");
+cursor:pointer;
+border:none;
+background-color: rgba(255,255,255,0.1);
+  }
+  
+  span{
+    background: #1C1C1C;
+    color: white; 
+    padding: 2px;
+  }
