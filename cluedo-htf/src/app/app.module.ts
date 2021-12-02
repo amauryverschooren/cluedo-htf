@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './pages/start/start.component';
 import { SpelregelsComponent } from './pages/spelregels/spelregels.component';
 import { GameComponent } from './pages/game/game.component';
+import { KladblokComponent } from './pages/kladblok/kladblok.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AppComponent,
     StartComponent,
     SpelregelsComponent,
-    GameComponent
+    GameComponent,
+    KladblokComponent
   ],
   imports: [
     BrowserModule,
