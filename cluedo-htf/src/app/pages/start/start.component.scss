@@ -1,3 +1,75 @@
 .container{
-    background-color: #7E7E7E;
+    position: fixed;
+    bottom: 0;
+    background-color: #e7e7e7;
+    width: 100%;
+    height: 100%;
+}
+#titleText{
+    font-family: Gimp Scribble;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    margin: 0;
+
+}
+.title{
+    margin-top: 20%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-image: url("../../../assets//img/title_mask.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 5px;
+}
+.intro{
+    text-align: center;
+}
+#introText{
+    font-size: 20px;
+    color: white;
+    margin: 4px;
+    font-family: Charter;
+}
+#introText span{
+    background-color: black;
+}
+button{
+    border-radius: 0;
+    box-shadow: none;
+    border-style: none;
+    border: 1px solid black;
+    padding: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+#buttonContainer{
+    text-align: center;
+}
+#spelregels{
+    bottom: 5px;
+    left: 5px;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    font-family: Charter;
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#top{
+    font-family:Gimp Scribble ;
+    font-size: 30px;
 }
